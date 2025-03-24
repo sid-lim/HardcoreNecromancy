@@ -74,10 +74,10 @@ public class HardcoreNecromancy extends JavaPlugin {
 		target.getInventory().setItemInMainHand(new ItemStack(Material.TOTEM_OF_UNDYING));
 		target.damage(target.getHealth());
 
-		player.getAttribute(Attribute.GENERIC_MAX_HEALTH)
-				.setBaseValue(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 6);
-		target.getAttribute(Attribute.GENERIC_MAX_HEALTH)
-				.setBaseValue(target.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 6);
+		// player.getAttribute(Attribute.GENERIC_MAX_HEALTH)
+				//.setBaseValue(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 6);
+		// target.getAttribute(Attribute.GENERIC_MAX_HEALTH)
+				//.setBaseValue(target.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 6);
 
 		target.addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, 1200, 1));
 
